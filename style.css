@@ -1,0 +1,55 @@
++*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+}
+body {
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color: #f0f0f0;
+   overflow: hidden;
+   position: relative;
+}
+
+.cube {
+   width: 100px;
+   height: 100px;
+   background-color: cyan;
+   position: absolute;
+   animation: rectangleMove 5s infinite linear;
+}
+
+@keyframes rectangleMove {
+   0% {
+       background-color: aqua;
+       top: 0;
+       left: 0; /* Chap yuqori burchak */
+   }
+   25% {
+       background-color: purple;
+       top: 0;
+       left: 1120px; /* O'ng yuqori burchak */
+   }
+   50% {
+      background-color: blue;
+       top: calc(100vh - 100px); 
+       left: 1120px;
+   }
+   75% {
+      background-color: brown;
+       top: calc(100vh - 100px); 
+       left: 0;
+   }
+   100% {
+      background-color: chartreuse;
+       top: 0;
+       left: 0; 
+   }
+   
